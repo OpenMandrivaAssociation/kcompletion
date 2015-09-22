@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kcompletion-5.13.0.tar.xz: 8a38fef2223bb04c0a5912804ef116044ffaf6a2
+sources:
+  kcompletion-5.14.0.tar.xz: 99fc184fdd5936afc384b8c0ee744b71a660997e
