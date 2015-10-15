@@ -6,7 +6,7 @@
 
 Name: kcompletion
 Version:	5.15.0
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 auto-completion library
 URL: http://kde.org/
@@ -18,7 +18,6 @@ BuildRequires: kconfig
 BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Widgets)
-Requires: %{libname} = %{EVRD}
 
 %description
 The KDE Frameworks 5 auto-completion library.
@@ -26,6 +25,7 @@ The KDE Frameworks 5 auto-completion library.
 %package -n %{libname}
 Summary: The KDE Frameworks 5 auto-completion library
 Group: System/Libraries
+Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
 The KDE Frameworks 5 auto-completion library.
