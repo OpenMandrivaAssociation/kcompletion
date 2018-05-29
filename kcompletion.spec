@@ -18,6 +18,7 @@ BuildRequires: kconfig
 BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(Qt5Xml)
 
 %description
 The KDE Frameworks 5 auto-completion library.
