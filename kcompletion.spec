@@ -6,8 +6,9 @@
 
 Name: kcompletion
 Version:	5.78.0
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
+Patch0:		https://invent.kde.org/frameworks/kcompletion/commit/7acda936f06193e9fc85ae5cf9ccc8d65971f657.patch
 Summary: The KDE Frameworks 5 auto-completion library
 URL: http://kde.org/
 License: GPL
@@ -77,7 +78,7 @@ Qt Designer plugin for handling %{name} widgets
 %{_libdir}/qt5/plugins/designer/*.so
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
